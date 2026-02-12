@@ -1,1 +1,9 @@
-1
+#!name=Kurogame_rules
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:3
+#!Publisher:bainiao0706
+#!Created:02-13 08:00 
+[Rule]
+DOMAIN-SUFFIX,kurogame.xyz,DIRECT
+DOMAIN-SUFFIX,kurogame.com,DIRECT
+DOMAIN-SUFFIX,kurobbs.com,DIRECT
