@@ -1,0 +1,25 @@
+#!name=Anime_Proxy_rules
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:16
+#!Publisher:bainiao0706
+#!Created:26/2/13 07:30
+[Rule]
+DOMAIN-SUFFIX,dm84.vip,Proxy
+DOMAIN-SUFFIX,hfkzm.com,Proxy
+DOMAIN-SUFFIX,gugu3.com,Proxy
+DOMAIN-SUFFIX,ylys.cc,Proxy
+DOMAIN-SUFFIX,dmmiku.com,Proxy
+DOMAIN-SUFFIX,libvio.site,Proxy
+DOMAIN-SUFFIX,vdm5.com,Proxy
+DOMAIN-SUFFIX,aafun.cc,Proxy
+DOMAIN-SUFFIX,anime7.top,Proxy
+DOMAIN-SUFFIX,bobodm.com,Proxy
+DOMAIN-SUFFIX,qkan9.com,Proxy
+DOMAIN-SUFFIX,dmbus.cc,Proxy
+DOMAIN-SUFFIX,pornhub.com,Proxy
+DOMAIN-SUFFIX,hanime1.me,Proxy
+DOMAIN-SUFFIX,iwara.tv,Proxy
+DOMAIN-SUFFIX,hanime.tv,Proxy
+DOMAIN-SUFFIX,hanime.xyz,Proxy
+
+
