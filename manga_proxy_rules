@@ -1,8 +1,8 @@
 #!name=Tachimanga_plugin_proxy_DOMAIN
 #!homepage=https://github.com/bainiao0706/Loon-rule
-#!desc=Rules:83 
+#!desc=Rules:109 
 #!Publisher:bainiao0706
-#!Created:02-13 05:08 
+#!Created:02-13 06:00 
 #!Notes1:Some comic websites that require proxy services use the tachimanga plugin.
 #!Notes2:Includes only Chinese and Japanese,and a few multilingual websites.
 [Rule]
@@ -89,4 +89,33 @@ DOMAIN-SUFFIX,younganimal.com,Proxy
 DOMAIN-SUFFIX,bigcomics.jp,Proxy
 DOMAIN-SUFFIX,comic-medu.com,Proxy
 DOMAIN-SUFFIX,comicpash.jp,Proxy
+DOMAIN-SUFFIX,picacomic.com,Proxy
+
+bilimanga.net
+bilimanga.com
+colamanga.com
+bzmgcn.com
+baozimh.com
+miaoqumh.org
+zazhimi.net
+18mh.org
+dm5.cn
+92mh.com
+liumanhua.com
+darpou.com
+comic.bh3.com
+dmzj.com
+gufengmh.com
+kuaikanmanhua.com
+manhuadb.com
+manhuaorg.com
+manwa.me
+mhua5.com
+acgud.com
+ac.qq.com
+wuqimh.net
+zaimanhua.com
+bilibilicomics.com
+manga.bilibili.com
+
 
