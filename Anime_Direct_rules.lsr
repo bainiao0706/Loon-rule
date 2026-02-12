@@ -1,0 +1,17 @@
+#!name=Anime_Direct_rules
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:11
+#!Publisher:bainiao0706
+#!Created:26-02-13 07:38
+[Rule]
+DOMAIN-SUFFIX,7sefun.top,DIRECT
+DOMAIN-SUFFIX,agedm.io,DIRECT
+DOMAIN-SUFFIX,baimaodm.com,DIRECT
+DOMAIN-SUFFIX,girigirilove.com,DIRECT
+DOMAIN-SUFFIX,omofun03.top,DIRECT
+DOMAIN-SUFFIX,omofun01.top,DIRECT
+DOMAIN-SUFFIX,omofun02.top,DIRECT
+DOMAIN-SUFFIX,mayi520.org,DIRECT
+DOMAIN-SUFFIX,skr1.cc,DIRECT
+DOMAIN-SUFFIX,akianime.com,DIRECT
+DOMAIN-SUFFIX,ffdm.cc,DIRECT
