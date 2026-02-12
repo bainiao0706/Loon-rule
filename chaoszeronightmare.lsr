@@ -2,7 +2,6 @@
 #!homepage=https://github.com/bainiao0706/Loon-rule
 #!desc=Rules:7 Created:02-13 03:08:17
 #!Publisher：bainiao0706
-[Rule]
 IP-CIDR,221.150.191.58/32,Proxy
 DOMAIN-SUFFIX,sginfra.net,Proxy
 DOMAIN-SUFFIX,supercre.com,Proxy
