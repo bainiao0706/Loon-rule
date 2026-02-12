@@ -1,7 +1,7 @@
-DOMAIN,221.150.191.58
-DOMAIN-SUFFIX,sginfra.net
-DOMAIN-SUFFIX,supercre.com
-DOMAIN-SUFFIX,singular.net
-DOMAIN-SUFFIX,smilegate.com
-DOMAIN-SUFFIX,onstove.com
-DOMAIN-SUFFIX,playstove.com
+DOMAIN,221.150.191.58,Proxy 
+DOMAIN-SUFFIX,sginfra.net,Proxy
+DOMAIN-SUFFIX,supercre.com,Proxy
+DOMAIN-SUFFIX,singular.net,Proxy
+DOMAIN-SUFFIX,smilegate.com,Proxy
+DOMAIN-SUFFIX,onstove.com,Proxy
+DOMAIN-SUFFIX,playstove.com,Proxy
