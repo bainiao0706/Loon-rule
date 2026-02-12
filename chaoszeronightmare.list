@@ -1,7 +1,3 @@
-#!name=chaoszeronightmare
-#!homepage=https://github.com/bainiao0706/Loon-rule
-#!desc=Rules:7 Created:02-13 03:08:17 Publisher：bainiao0706
-[Rule]
 DOMAIN,221.150.191.58
 DOMAIN-SUFFIX,sginfra.net
 DOMAIN-SUFFIX,supercre.com
