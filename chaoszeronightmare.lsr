@@ -1,5 +1,5 @@
 #!name=chaoszeronightmare_DOMAIN
-#!homepage=https://github.com/bainiao0706/loon-rule
+#!homepage=https://github.com/bainiao0706/Loon-rule
 #!desc=Rules:7 Created:02-13 03:51 Publisher:bainiao0706
 [Rule]
 DOMAIN,221.150.191.58/32,Proxy
