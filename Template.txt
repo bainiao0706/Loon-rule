@@ -1,0 +1,7 @@
+#!name=
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:
+#!Publisher:bainiao0706
+#!Created:
+[Rule]
+DOMAIN,xxxxxxxxxxxxx,Proxy
