@@ -1,0 +1,15 @@
+#!name=Trickcal:Chibi Go_rules_DOMAIN-SUFFIX
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:
+#!Publisher:bainiao0706
+#!Created:02-13 06:00 
+[Rule]
+DOMAIN-SUFFIX,aihelp.net.cn,Proxy
+DOMAIN-SUFFIX,trickcalglobal.aihelp.net,Proxy
+DOMAIN-SUFFIX,bilibiligame.com,Proxy
+DOMAIN-SUFFIX,bilibiligame.co,Proxy
+DOMAIN-SUFFIX,biligame.co,Proxy
+DOMAIN-SUFFIX,biligame.com,Proxy
+DOMAIN-SUFFIX,bilibiligame.net,Proxy
+DOMAIN-SUFFIX,biligame.net,Proxy
+DOMAIN-SUFFIX,trickcalglobal.aihelp.net.cn,Proxy
