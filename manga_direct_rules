@@ -1,4 +1,11 @@
-
+#!name=Tachimanga_plugin_direct_rules_DOMAIN
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:26
+#!Publisher:bainiao0706
+#!Created:02-13 06:00 
+#!Notes1:Some comic websites that require proxy services use the tachimanga plugin.
+#!Notes2:Includes only Chinese websites.
+[Rule]
 DOMAIN-SUFFIX,bilimanga.net,DIRECT
 DOMAIN-SUFFIX,bilimanga.com,DIRECT
 DOMAIN-SUFFIX,colamanga.com,DIRECT
