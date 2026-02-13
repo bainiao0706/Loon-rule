@@ -1,23 +1,120 @@
 #!name=File_hosting_service_rules
 #!homepage=https://github.com/bainiao0706/Loon-rule
-#!desc=Rules:16
 #!Publisher:bainiao0706
 #!Created:26-02-13 
 [Rule]
-DOMAIN-SUFFIX,dropbox.com,Proxy
-DOMAIN-SUFFIX,onedrive.live.com,Proxy
+# [Google Drive]
 DOMAIN-SUFFIX,drive.google.com,Proxy
-DOMAIN-SUFFIX,amazon.com/clouddrive,Proxy
-DOMAIN-SUFFIX,pcloud.com,Proxy
+DOMAIN-SUFFIX,googleusercontent.com,Proxy
+DOMAIN-SUFFIX,googledrive.com,Proxy
+DOMAIN-KEYWORD,docs-python-hermes,Proxy
+
+# [Microsoft OneDrive & SharePoint]
+DOMAIN-SUFFIX,onedrive.live.com,Proxy
+DOMAIN-SUFFIX,1drv.ms,Proxy
+DOMAIN-SUFFIX,storage.live.com,Proxy
+DOMAIN-SUFFIX,sharepoint.com,Proxy
+DOMAIN-SUFFIX,sharepointonline.com,Proxy
+
+# [Dropbox]
+DOMAIN-SUFFIX,dropbox.com,Proxy
+DOMAIN-SUFFIX,dropboxapi.com,Proxy
+DOMAIN-SUFFIX,dropboxstatic.com,Proxy
+DOMAIN-SUFFIX,dropboxusercontent.com,Proxy
+
+# [MEGA]
 DOMAIN-SUFFIX,mega.io,Proxy
 DOMAIN-SUFFIX,mega.nz,Proxy
-DOMAIN-SUFFIX,mediafire.com,Proxy
-DOMAIN-SUFFIX,box.com,Proxy
-DOMAIN-SUFFIX,4shared.com,Proxy
-DOMAIN-SUFFIX,infini-cloud.net,Proxy
-DOMAIN-SUFFIX,sync.com,Proxy
-DOMAIN-SUFFIX,terabox.com,Proxy
-DOMAIN-SUFFIX,nextcloud.com,Proxy
-DOMAIN-SUFFIX,backblaze.com,Proxy
+DOMAIN-SUFFIX,megaupload.com,Proxy
+DOMAIN-KEYWORD,mega.co.nz,Proxy
+
+# [Amazon Drive]
+DOMAIN-SUFFIX,adrive.com,Proxy
+DOMAIN-KEYWORD,amazon,Proxy
+
+# [PikPak]
 DOMAIN-SUFFIX,mypikpak.com,Proxy
 DOMAIN-SUFFIX,pikpak.org,Proxy
+DOMAIN-SUFFIX,pikpak.me,Proxy
+
+# [Terabox]
+DOMAIN-SUFFIX,terabox.com,Proxy
+DOMAIN-SUFFIX,teraboxcdn.com,Proxy
+DOMAIN-SUFFIX,teraboxapp.com,Proxy
+
+# [PCloud]
+DOMAIN-SUFFIX,pcloud.com,Proxy
+DOMAIN-SUFFIX,pcloud.link,Proxy
+
+# [MediaFire]
+DOMAIN-SUFFIX,mediafire.com,Proxy
+DOMAIN-SUFFIX,mfire.info,Proxy
+
+# [Box]
+DOMAIN-SUFFIX,box.com,Proxy
+DOMAIN-SUFFIX,boxcloud.com,Proxy
+DOMAIN-SUFFIX,boxcontent.net,Proxy
+
+# [Backblaze]
+DOMAIN-SUFFIX,backblaze.com,Proxy
+DOMAIN-SUFFIX,b2.com,Proxy
+DOMAIN-SUFFIX,f001.backblazeb2.com,Proxy
+
+# [Sync.com]
+DOMAIN-SUFFIX,sync.com,Proxy
+DOMAIN-SUFFIX,sync.com.hk,Proxy
+
+# [4shared / Infini / Nextcloud]
+DOMAIN-SUFFIX,4shared.com,Proxy
+DOMAIN-SUFFIX,infini-cloud.net,Proxy
+DOMAIN-SUFFIX,nextcloud.com,Proxy
+DOMAIN-SUFFIX,nextcloud.org,Proxy
+
+# [匿名运营商]
+DOMAIN-SUFFIX,gofile.io,Proxy
+DOMAIN-SUFFIX,pixeldrain.com,Proxy
+DOMAIN-SUFFIX,catbox.moe,Proxy
+DOMAIN-SUFFIX,qiwi.gg,Proxy
+DOMAIN-SUFFIX,workupload.com,Proxy
+DOMAIN-SUFFIX,filehosting.org,Proxy
+
+# [AnonFiles]
+DOMAIN-SUFFIX,bayfiles.com,Proxy
+DOMAIN-SUFFIX,openload.cc,Proxy
+
+# [Fikper / RapidGator]
+DOMAIN-SUFFIX,fikper.com,Proxy
+DOMAIN-SUFFIX,rapidgator.net,Proxy
+DOMAIN-SUFFIX,rg.to,Proxy
+
+# [NitroFlare / Turbobit]
+DOMAIN-SUFFIX,nitroflare.com,Proxy
+DOMAIN-SUFFIX,turbobit.net,Proxy
+DOMAIN-SUFFIX,hitfile.net,Proxy
+
+# [全域 CDN 补丁 - 专门负责支撑大文件下载]
+DOMAIN-SUFFIX,akamaihd.net,Proxy
+DOMAIN-SUFFIX,cloudfront.net,Proxy
+DOMAIN-SUFFIX,edgecastcdn.net,Proxy
+DOMAIN-SUFFIX,fastly.net,Proxy
+
+# [Google 系最容易漏掉的下载节点]
+DOMAIN-SUFFIX,googlevideo.com,Proxy  # 别被名字骗了，很多大文件流也走这里
+DOMAIN-SUFFIX,dl.google.com,Proxy
+
+# [Microsoft 系数据出口补丁]
+DOMAIN-SUFFIX,aspnetcdn.com,Proxy
+DOMAIN-SUFFIX,msocdn.com,Proxy
+DOMAIN-SUFFIX,windows.net,Proxy      # Azure 存储节点，OneDrive 经常调用
+
+# [MEGA 稳定性增强]
+DOMAIN-SUFFIX,userstorage.mega.co.nz,Proxy
+DOMAIN-SUFFIX,giga.nz,Proxy
+
+# [通用资源加载补丁]
+DOMAIN-SUFFIX,jwpcdn.com,Proxy       # 很多网盘自带的视频预览播放器走这里
+DOMAIN-SUFFIX,cdn.jsdelivr.net,Proxy # 很多网盘的下载界面脚本挂在这里
+
+
+
+
