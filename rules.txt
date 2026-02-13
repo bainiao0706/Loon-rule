@@ -1,0 +1,11 @@
+#!name=chaoszeronightmare_DOMAIN
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:7 Created:02-13 03:51 Publisher:bainiao0706
+[Rule]
+DOMAIN,221.150.191.58/32,Proxy
+DOMAIN-SUFFIX,sginfra.net,Proxy
+DOMAIN-SUFFIX,supercre.com,Proxy
+DOMAIN-SUFFIX,singular.net,Proxy
+DOMAIN-SUFFIX,smilegate.com,Proxy
+DOMAIN-SUFFIX,onstove.com,Proxy
+DOMAIN-SUFFIX,playstove.com,Proxy
