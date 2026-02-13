@@ -1,0 +1,15 @@
+#!name = CF 自动通行证
+#!author =bainiao0706
+#!icon = https://raw.githubusercontent.com/Loon0x00/Loon-Gallery/master/IconSet/Color/Manga.png
+#!date = 2026-02-14 00:38
+
+[Script]
+http-response ^https?:\/\/.*?\.(copymanga|jm-comic|mangacopy|18comic|wnacg|nhentai|manhuadb|baozimh|yamanym|manga|picacomic|hanmanwo|hibiki|manhuagui|dmzj|volmoe|manwa|hanime1|loveheaven|manhuacat|manhwa18|rawdevart|weloma|manganato|mangakakalot|mangabuddy|mangapill|mangadex|mangasee|manga4life|mangalib|reaper-scans|asurascans|flamescans|luminousscans|void-scans|realmscans|topmanhua|mangatx|mangageko|manhuafast|mangagreat|manganelo|kissmanga|mangapark|mangarock|mangahub|mangareader|mangatown|mangago|mangainn|mangahere|mangafox|readm|mangaraw|comicwalker|alphapolis|shonenjumpplus|pixiv|sunday-webry|magcomi|comic|tonarinoyj|shonenmagazine|ganma|mangacross|kuragebunch|manga-one|comico)\..*\/ script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/CF_Auto.js, requires-body=0, binary-body-mode=0, tag=Manga_CF_Capture
+
+# 注入逻辑：同样采用轻量化解析
+http-request ^https?:\/\/.*?\.(copymanga|jm-comic|mangacopy|18comic|wnacg|nhentai|manhuadb|baozimh|yamanym|manga|picacomic|hanmanwo|hibiki|manhuagui|dmzj|volmoe|manwa|hanime1|loveheaven|manhuacat|manhwa18|rawdevart|weloma|manganato|mangakakalot|mangabuddy|mangapill|mangadex|mangasee|manga4life|mangalib|reaper-scans|asurascans|flamescans|luminousscans|void-scans|realmscans|topmanhua|mangatx|mangageko|manhuafast|mangagreat|manganelo|kissmanga|mangapark|mangarock|mangahub|mangareader|mangatown|mangago|mangainn|mangahere|mangafox|readm|mangaraw|comicwalker|alphapolis|shonenjumpplus|pixiv|sunday-webry|magcomi|comic|tonarinoyj|shonenmagazine|ganma|mangacross|kuragebunch|manga-one|comico)\..*\/ script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/CF_Auto.js, requires-body=0, binary-body-mode=0, tag=Manga_CF_Inject
+
+[MITM]
+# 开启证书透传 (Skip Server Certificate Verification) 的学术平替方案
+# 仅针对关键域名开启，减少 CPU 对握手过程的干预
+hostname = *.copymanga.*, *.jm-comic.*, *.mangacopy.*, *.18comic.*, *.wnacg.*, *.nhentai.*, *.manhuadb.*, *.baozimh.*, *.yamanym.*, *.manga.*, *.picacomic.*, *.hanmanwo.*, *.hibiki.*, *.manhuagui.*, *.dmzj.*, *.volmoe.*, *.manwa.*, *.hanime1.*, *.loveheaven.*, *.manhuacat.*, *.manhwa18.*, *.rawdevart.*, *.weloma.*, *.manganato.*, *.mangakakalot.*, *.mangabuddy.*, *.mangapill.*, *.mangadex.*, *.mangasee.*, *.manga4life.*, *.mangalib.*, *.reaper-scans.*, *.asurascans.*, *.flamescans.*, *.luminousscans.*, *.void-scans.*, *.realmscans.*, *.topmanhua.*, *.mangatx.*, *.mangageko.*, *.manhuafast.*, *.mangagreat.*, *.manganelo.*, *.kissmanga.*, *.mangapark.*, *.mangarock.*, *.mangahub.*, *.mangareader.*, *.mangatown.*, *.mangago.*, *.mangainn.*, *.mangahere.*, *.mangafox.*, *.readm.*, *.mangaraw.*, *.comicwalker.*, *.alphapolis.*, *.shonenjumpplus.*, *.pixiv.*, *.sunday-webry.*, *.magcomi.*, *.comic.*, *.tonarinoyj.*, *.shonenmagazine.*, *.ganma.*, *.mangacross.*, *.kuragebunch.*, *.manga-one.*, *.comico.*
