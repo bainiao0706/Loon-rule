@@ -60,11 +60,11 @@ DOMAIN-SUFFIX,backblaze.com,Proxy
 DOMAIN-SUFFIX,b2.com,Proxy
 DOMAIN-SUFFIX,f001.backblazeb2.com,Proxy
 
-# [Sync.com]
+# [Sync]
 DOMAIN-SUFFIX,sync.com,Proxy
 DOMAIN-SUFFIX,sync.com.hk,Proxy
 
-# [4shared / Infini / Nextcloud]
+# [4shared/Infini/Nextcloud]
 DOMAIN-SUFFIX,4shared.com,Proxy
 DOMAIN-SUFFIX,infini-cloud.net,Proxy
 DOMAIN-SUFFIX,nextcloud.com,Proxy
@@ -82,38 +82,38 @@ DOMAIN-SUFFIX,filehosting.org,Proxy
 DOMAIN-SUFFIX,bayfiles.com,Proxy
 DOMAIN-SUFFIX,openload.cc,Proxy
 
-# [Fikper / RapidGator]
+# [Fikper/RapidGator]
 DOMAIN-SUFFIX,fikper.com,Proxy
 DOMAIN-SUFFIX,rapidgator.net,Proxy
 DOMAIN-SUFFIX,rg.to,Proxy
 
-# [NitroFlare / Turbobit]
+# [NitroFlare/Turbobit]
 DOMAIN-SUFFIX,nitroflare.com,Proxy
 DOMAIN-SUFFIX,turbobit.net,Proxy
 DOMAIN-SUFFIX,hitfile.net,Proxy
 
-# [全域 CDN 补丁 - 专门负责支撑大文件下载]
+# [CDN]
 DOMAIN-SUFFIX,akamaihd.net,Proxy
 DOMAIN-SUFFIX,cloudfront.net,Proxy
 DOMAIN-SUFFIX,edgecastcdn.net,Proxy
 DOMAIN-SUFFIX,fastly.net,Proxy
 
-# [Google 系最容易漏掉的下载节点]
-DOMAIN-SUFFIX,googlevideo.com,Proxy  # 别被名字骗了，很多大文件流也走这里
+# [Google]
+DOMAIN-SUFFIX,googlevideo.com,Proxy  
 DOMAIN-SUFFIX,dl.google.com,Proxy
 
-# [Microsoft 系数据出口补丁]
+# [Microsoft]
 DOMAIN-SUFFIX,aspnetcdn.com,Proxy
 DOMAIN-SUFFIX,msocdn.com,Proxy
-DOMAIN-SUFFIX,windows.net,Proxy      # Azure 存储节点，OneDrive 经常调用
+DOMAIN-SUFFIX,windows.net,Proxy      
 
-# [MEGA 稳定性增强]
+# [MEGA]
 DOMAIN-SUFFIX,userstorage.mega.co.nz,Proxy
 DOMAIN-SUFFIX,giga.nz,Proxy
 
 # [通用资源加载补丁]
-DOMAIN-SUFFIX,jwpcdn.com,Proxy       # 很多网盘自带的视频预览播放器走这里
-DOMAIN-SUFFIX,cdn.jsdelivr.net,Proxy # 很多网盘的下载界面脚本挂在这里
+DOMAIN-SUFFIX,jwpcdn.com,Proxy      
+DOMAIN-SUFFIX,cdn.jsdelivr.net,Proxy 
 
 
 
