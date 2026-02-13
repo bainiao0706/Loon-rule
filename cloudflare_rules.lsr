@@ -1,0 +1,18 @@
+# --- Cloudflare Bypass & Validation ---
+# 逻辑说明：针对机器人验证（Turnstile）及核心链路的分流
+
+# [核心验证入口 - 必须精准捕捉]
+DOMAIN-SUFFIX,challenges.cloudflare.com,Proxy
+DOMAIN-SUFFIX,hcaptcha.com,Proxy
+DOMAIN-SUFFIX,recaptcha.net,Proxy
+
+# [Cloudflare 基础架构]
+DOMAIN-SUFFIX,cloudflare.com,Proxy
+DOMAIN-SUFFIX,cloudflare.net,Proxy
+DOMAIN-SUFFIX,cloudflare-dns.com,Proxy
+DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
+DOMAIN-SUFFIX,static.cloudflarebar.com,Proxy
+
+# [静态资源 - 防止验证码加载失败]
+DOMAIN-SUFFIX,cdnjs.cloudflare.com,Proxy
+DOMAIN-SUFFIX,ajax.cloudflare.com,Proxy
