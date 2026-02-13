@@ -1,0 +1,21 @@
+#!name=Novel_Proxy_Rules
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!desc=Rules:14
+#!Publisher:bainiao0706
+#!Created:26-02-13 21:00
+[Rule]
+DOMAIN-SUFFIX,wenku8.net,Proxy
+DOMAIN-SUFFIX,linovelib.com,Proxy
+DOMAIN-SUFFIX,ritdon.com,Proxy
+DOMAIN-SUFFIX,mobinovels.com,Proxy
+DOMAIN-SUFFIX,animetox.com,Proxy
+DOMAIN-SUFFIX,acgndog.com,Proxy
+DOMAIN-SUFFIX,linovel.net,Proxy
+DOMAIN-SUFFIX,lightnovel.fun,Proxy
+DOMAIN-SUFFIX,lightnovel.app,Proxy
+DOMAIN-SUFFIX,23qb.net,Proxy
+DOMAIN-SUFFIX,jnovels.com,Proxy
+DOMAIN-SUFFIX,shencou.com,Proxy
+DOMAIN-SUFFIX,lightnovel.app,Proxy
+DOMAIN-SUFFIX,8novel.com,Proxy
+DOMAIN-SUFFIX,sfacg.com,Proxy
