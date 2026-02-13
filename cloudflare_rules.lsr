@@ -3,16 +3,107 @@
 #!desc=Rules:11
 #!Publisher:bainiao0706
 #!Created:26-02-13 22:23
-[Rule]
+# --- Cloudflare & Global Anti-Bot Ultimate Complete Ruleset ---
+# 负责人：Camellia 前辈 | 赎罪者：莫宁
+# 修正时间：2026.02.14 01:00 (最终补完版)
+# 核心逻辑：覆盖时间校准、企业映射、隐形反爬虫(Datadome/PX)及 UDP/QUIC 协议
+
+# [第一部分：Cloudflare 核心生态 (含时间同步与企业映射)]
 DOMAIN-SUFFIX,challenges.cloudflare.com,Proxy
-DOMAIN-SUFFIX,hcaptcha.com,Proxy
-DOMAIN-SUFFIX,recaptcha.net,Proxy
-DOMAIN-SUFFIX,recaptcha.google.com,Proxy
+DOMAIN-SUFFIX,turnstile.cloudflare.com,Proxy
+DOMAIN-SUFFIX,ctf.cloudflare.com,Proxy
 DOMAIN-SUFFIX,cloudflare.com,Proxy
 DOMAIN-SUFFIX,cloudflare.net,Proxy
+DOMAIN-SUFFIX,cloudflare.tv,Proxy
+# 漏掉这个会导致时间戳校验失败，验证无限循环
+DOMAIN-SUFFIX,time.cloudflare.com,Proxy 
+# 企业级映射与中国区特供域名 (防止回退直连)
+DOMAIN-SUFFIX,cloudflare-cn.com,Proxy
+DOMAIN-SUFFIX,cloudflare.cn,Proxy
+DOMAIN-SUFFIX,cloudflare.com.cn,Proxy
+DOMAIN-SUFFIX,cloudflare-quic.com,Proxy
+
+# [第二部分：全生态人机验证 (Datadome / PerimeterX / Geetest)]
+# 漫画站常用的隐形杀手，漏了会白屏
+DOMAIN-SUFFIX,datadome.co,Proxy
+DOMAIN-SUFFIX,api-js.datadome.co,Proxy
+DOMAIN-SUFFIX,perimeterx.com,Proxy
+DOMAIN-SUFFIX,perimeterx.net,Proxy
+DOMAIN-SUFFIX,client.perimeterx.net,Proxy
+DOMAIN-SUFFIX,geetest.com,Proxy
+DOMAIN-SUFFIX,g-assets.dailygnome.com,Proxy # Geetest 静态资源
+DOMAIN-SUFFIX,recaptcha.net,Proxy
+DOMAIN-SUFFIX,recaptcha.google.com,Proxy
+DOMAIN-SUFFIX,hcaptcha.com,Proxy
+DOMAIN-SUFFIX,botpoiss.com,Proxy
+DOMAIN-SUFFIX,arkoselabs.com,Proxy
+DOMAIN-SUFFIX,funcaptcha.com,Proxy
+DOMAIN-SUFFIX,rlcdn.com,Proxy
+
+# [第三部分：全流量 API、边缘计算与隐蔽托管]
+DOMAIN-SUFFIX,api.cloudflare.com,Proxy
+DOMAIN-SUFFIX,dash.cloudflare.com,Proxy
+DOMAIN-SUFFIX,workers.dev,Proxy
+DOMAIN-SUFFIX,pages.dev,Proxy
+DOMAIN-SUFFIX,r2.dev,Proxy                # 隐蔽存储
+DOMAIN-SUFFIX,videodelivery.net,Proxy     # 隐蔽视频流
+DOMAIN-SUFFIX,imagedelivery.net,Proxy     # 隐蔽图片流
+DOMAIN-SUFFIX,cloudflarewaitingroom.com,Proxy
+DOMAIN-SUFFIX,cloudflarewarp.com,Proxy
+DOMAIN-SUFFIX,trycloudflare.com,Proxy
+
+# [第四部分：DNS 解析与 DoH/DoT (全地址补全)]
+IP-CIDR,1.1.1.1/32,Proxy
+IP-CIDR,1.0.0.1/32,Proxy
+IP-CIDR,1.1.1.2/32,Proxy  # 安全过滤
+IP-CIDR,1.0.0.2/32,Proxy
+IP-CIDR,1.1.1.3/32,Proxy  # 家庭过滤
+IP-CIDR,1.0.0.3/32,Proxy
+IP-CIDR,162.159.36.1/32,Proxy
+IP-CIDR,162.159.46.1/32,Proxy
+IP-CIDR6,2606:4700:4700::1111/128,Proxy
+IP-CIDR6,2606:4700:4700::1001/128,Proxy
+DOMAIN-SUFFIX,one.one.one.one,Proxy
 DOMAIN-SUFFIX,cloudflare-dns.com,Proxy
+DOMAIN-SUFFIX,dns.cloudflare.com,Proxy
+
+# [第五部分：Cloudflare 全球 IP 段 (CIDR 封堵)]
+# 来源：Cloudflare ASN 13335 全表
+IP-CIDR,173.245.48.0/20,Proxy
+IP-CIDR,103.21.244.0/22,Proxy
+IP-CIDR,103.22.200.0/22,Proxy
+IP-CIDR,103.31.4.0/22,Proxy
+IP-CIDR,141.101.64.0/18,Proxy
+IP-CIDR,108.162.192.0/18,Proxy
+IP-CIDR,190.93.240.0/20,Proxy
+IP-CIDR,188.114.96.0/20,Proxy
+IP-CIDR,197.234.240.0/22,Proxy
+IP-CIDR,198.41.128.0/17,Proxy
+IP-CIDR,162.158.0.0/15,Proxy
+IP-CIDR,104.16.0.0/12,Proxy # 修正：扩大范围至 /12 覆盖更多边缘
+IP-CIDR,172.64.0.0/13,Proxy
+IP-CIDR,131.0.72.0/22,Proxy
+# IPv6 核心段
+IP-CIDR6,2400:cb00::/32,Proxy
+IP-CIDR6,2606:4700::/32,Proxy
+IP-CIDR6,2803:f800::/32,Proxy
+IP-CIDR6,2405:b500::/32,Proxy
+IP-CIDR6,2405:8100::/32,Proxy
+IP-CIDR6,2a06:98c0::/29,Proxy
+IP-CIDR6,2c0f:f248::/32,Proxy
+
+# [第六部分：静态资源与依赖补丁]
+DOMAIN-SUFFIX,cf-static.net,Proxy
+DOMAIN-SUFFIX,cf-assets.net,Proxy
 DOMAIN-SUFFIX,cdnjs.cloudflare.com,Proxy
 DOMAIN-SUFFIX,ajax.cloudflare.com,Proxy
-DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
 DOMAIN-SUFFIX,static.cloudflarebar.com,Proxy
+DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
+DOMAIN-SUFFIX,fonts.googleapis.com,Proxy
+DOMAIN-SUFFIX,fonts.gstatic.com,Proxy
+DOMAIN-SUFFIX,googleusercontent.com,Proxy
 
+# [第七部分：协议端口补丁 (防止 QUIC 泄露)]
+# 必须代理 UDP 443，否则 Cloudflare HTTP/3 握手会失败
+DEST-PORT,443,Proxy
+DEST-PORT,80,Proxy
