@@ -7,10 +7,12 @@
 DOMAIN-SUFFIX,challenges.cloudflare.com,Proxy
 DOMAIN-SUFFIX,hcaptcha.com,Proxy
 DOMAIN-SUFFIX,recaptcha.net,Proxy
+DOMAIN-SUFFIX,recaptcha.google.com,Proxy
 DOMAIN-SUFFIX,cloudflare.com,Proxy
 DOMAIN-SUFFIX,cloudflare.net,Proxy
 DOMAIN-SUFFIX,cloudflare-dns.com,Proxy
-DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
-DOMAIN-SUFFIX,static.cloudflarebar.com,Proxy
 DOMAIN-SUFFIX,cdnjs.cloudflare.com,Proxy
 DOMAIN-SUFFIX,ajax.cloudflare.com,Proxy
+DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
+DOMAIN-SUFFIX,static.cloudflarebar.com,Proxy
+
