@@ -10,7 +10,7 @@ hostname = api.kurobbs.com
 
 [Script]
 # 捕捉 Token 逻辑：当匹配到签到或登录请求时触发
-http-request ^https:\/\/api\.kurobbs\.com\/(user\/signIn|encourage\/signIn\/v2) script-path=https://raw.githubusercontent.com/YourRepo/kuro.js, requires-body=true, timeout=10, tag=获取库街区Token
+http-request ^https:\/\/api\.kurobbs\.com\/(user\/signIn|encourage\/signIn\/v2) script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/kuro.js, requires-body=true, timeout=10, tag=获取库街区Token
 
 # 定时执行逻辑：每天上午 04:30 执行
 cron "30 4 * * *" script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/kuro.js,timeout=60, tag=库街区每日签到
