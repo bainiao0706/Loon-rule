@@ -1,24 +1,24 @@
-[General]
-name = ComicPuncher
-desc = 自动完成哔咔(Pica)与禁漫(JM)每日签到。请在插件配置中填写账号密码。
-author = bainiao0706
-icon = https://raw.githubusercontent.com/luestr/Icon-set/master/App/Pica.png
+#!name=ComicPuncher
+#!desc=自动完成哔咔(Pica)与禁漫(JM)每日签到。请在插件配置中手动填写账号密码。
+#!author=MoNing
+#!homepage=https://github.com/bainiao0706/Loon-rule
+#!icon=https://raw.githubusercontent.com/luestr/Icon-set/master/App/Pica.png
+#!date=2026-04-24
 
 [Argument]
-pica_email = input, "", tag=哔咔账号, desc=请输入邮箱
-pica_password = input, "", tag=哔咔密码, desc=请输入密码
-jm_username = input, "", tag=禁漫账号, desc=请输入用户名
-jm_password = input, "", tag=禁漫密码, desc=请输入密码
+pica_email = input,"",tag=哔咔账号,desc=请输入邮箱
+pica_password = input,"",tag=哔咔密码,desc=请输入密码
+jm_username = input,"",tag=禁漫账号,desc=请输入用户名
+jm_password = input,"",tag=禁漫密码,desc=请输入密码
 
 [Rule]
-DOMAIN-SUFFIX, picacomic.com, PROXY
-DOMAIN-SUFFIX, 18comic.vip，PROXY
-DOMAIN-SUFFIX, 18comic.org，PROXY
+DOMAIN-SUFFIX,picacomic.com,PROXY
+DOMAIN-SUFFIX,18comic.vip,PROXY
+DOMAIN-SUFFIX,18comic.org,PROXY
 
 [Script]
-# 每天上午 8:30 执行
-# 脚本路径已更新为你的 GitHub 仓库地址
-cron "30 8 * * *" script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/ComicPuncher.js, tag=ComicPuncher, timeout=60
+# 每天上午 8:30 执行签到，使用了 CDN 加速路径防网络阻断
+cron "30 8 * * *" script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/ComicPuncher.js,tag=ComicPuncher,timeout=60
 
 [MITM]
-hostname = picaapi.picacomic.com，18comic.vip, 
+hostname = picaapi.picacomic.com, 18comic.vip
