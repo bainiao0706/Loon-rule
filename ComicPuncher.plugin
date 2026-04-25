@@ -18,7 +18,7 @@ DOMAIN-SUFFIX,18comic.org,PROXY
 
 [Script]
 # 每天上午 8:30 执行签到
-cron "30 8 * * *" script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/ComicPuncher.js,tag=ComicPuncher,timeout=60
+cron "30 8 * * *" script-path=https://raw.githubusercontent.com/bainiao0706/Loon-rule/main/ComicPuncher.js,tag=ComicPuncher,timeout=60,argument="pica_email={pica_email}&pica_password={pica_password}&jm_username={jm_username}&jm_password={jm_password}"
 
 [MITM]
 hostname = picaapi.picacomic.com, 18comic.vip
